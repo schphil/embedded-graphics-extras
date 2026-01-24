@@ -1,0 +1,13 @@
+[package]
+name = "embedded-graphics-extras"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+embedded-graphics = "0.8"
+
+[dev-dependencies]
+embedded-graphics-simulator = { version = "0.8" }
+
+[profile.dev]
+opt-level = 0
