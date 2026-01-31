@@ -4,10 +4,16 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
+defmt = { version = "0.3.2", optional = true }
 embedded-graphics = "0.8"
 
 [dev-dependencies]
 embedded-graphics-simulator = { version = "0.8" }
+image = "0.25.9"
+
+[features]
+default = []
+defmt = ["dep:defmt"]
 
 [profile.dev]
 opt-level = 0
